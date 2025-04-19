@@ -1,0 +1,17 @@
+//mixins
+
+@mixin container_flex($direccion,$justify){
+    display: flex;
+    flex-direction: $direccion;
+    justify-content: $justify;
+}
+
+
+//Herencia
+%distanciaEntreLi{
+    //operadores
+    padding-left: 10px + 5px;
+    padding-right: 10px + 5px;
+}
+
+

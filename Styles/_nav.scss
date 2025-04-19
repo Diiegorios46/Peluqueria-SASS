@@ -1,0 +1,45 @@
+@use '_mixins.scss';
+@use '_sectionBanner.scss';
+
+$movile : 1080px;
+
+$movile-small : 700px;
+
+header{
+    @include mixins.container_flex(row,center);
+    width: 100%;
+    border-bottom: 1px solid gray;
+}
+
+.container_nav{
+    @include mixins.container_flex(row,space-between);
+    width: 50%;
+    align-items: center;
+    width: 60%;
+
+    .box_info_container_nav_{
+        ul{
+            @include mixins.container_flex(row,none);
+
+            list-style: none;
+            
+            li{
+                //Herencia
+                @extend %distanciaEntreLi;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+@media (max-width : $movile) {
+    .container_nav{
+        width: 100%;
+    }
+}
+
+@media (max-width : $movile-small) {
+    .container_nav{
+        font-size: 0.4rem;
+    }
+}
