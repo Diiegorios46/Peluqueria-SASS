@@ -3,7 +3,6 @@
 .sectionBanner {
   height: 60%;
   @include mixins.container_flex(row, center);
-  padding: 2rem;
 }
 
 .container-img {
