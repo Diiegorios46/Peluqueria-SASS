@@ -46,6 +46,7 @@
   font-size: clamp(1rem, 2vw, 1.25rem);
 }
 .container_info_container-img button {
+  width: -moz-fit-content;
   width: fit-content;
   padding: 10px 20px;
   border: 2px solid #4d967c;
@@ -127,35 +128,12 @@ header {
     font-size: 0.4rem;
   }
 }
-.section_tratamiento .container_tratamiento h2 {
-  text-align: center;
-}
-.section_tratamiento .container_tratamiento h1 {
-  text-align: center;
-}
-.section_tratamiento .container_tratamiento p {
-  text-align: center;
-  color: black;
-}
-.section_tratamiento .container_cortes {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-.section_tratamiento .container_grid_cortes {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  width: 95%;
-}
-.section_tratamiento .container_grid_cortes div {
-  border: 1px solid red;
-}
-
 body {
   padding: 0;
   margin: 0;
   color: #79b9a4;
 }
 
-/*# sourceMappingURL=styles.css.map */
+main {
+  height: 100vh;
+}/*# sourceMappingURL=style.css.map */

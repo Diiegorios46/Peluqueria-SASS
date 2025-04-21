@@ -1,7 +1,6 @@
 @use '_mixins';
 
 .sectionBanner {
-  height: 60%;
   @include mixins.container_flex(row, center);
 }
 

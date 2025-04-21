@@ -1,0 +1,33 @@
+@use '_mixins';
+
+.section_tratamiento{
+    .container_tratamiento{
+        h2{
+            text-align: center;
+        }
+        h1{
+            text-align: center;
+        }
+        p{
+            text-align: center;
+            color: black;
+        }
+    }
+    
+    .container_cortes{
+        width: 100%;
+        @include mixins.container_flex(row, center);
+
+    }
+    
+    .container_grid_cortes{
+        display: grid;
+        grid-template-columns: repeat(4,1fr) ;
+        width: 95%;
+
+        div{
+            border: 1px solid red;
+        }
+    }
+    
+}

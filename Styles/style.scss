@@ -1,5 +1,7 @@
 //modulo
 @use '_nav.scss';
+@use '_section_tratamiento.scss';
+
 
 $colorLetras : #79b9a4;
 
@@ -7,9 +9,5 @@ body{
     padding: 0;
     margin: 0;
     color : $colorLetras;
-}
-
-main{
-    height: 100vh;
 }
 
