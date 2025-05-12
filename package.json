@@ -1,0 +1,24 @@
+{
+  "name": "peluqueria-sass",
+  "version": "1.0.0",
+  "description": "Proyecto de práctica de estilos utilizando SASS...",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass Styles/styles.scss Styles/styles.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dilegorios46/Reluqueria-SASS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dilegorios46/Reluqueria-SASS/issues"
+  },
+  "homepage": "https://github.com/Dilegorios46/Reluqueria-SASS#readme",
+  "devDependencies": {
+    "sass": "^1.87.0"
+  }
+}

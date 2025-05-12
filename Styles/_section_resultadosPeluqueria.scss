@@ -1,0 +1,39 @@
+@use '_mixins';
+
+.section_resultadosPeluqueria {
+  margin-top: 5%;
+  @include mixins.container_flex(row, center);
+}
+
+.container_section_resultadosPeluqueria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  width: 85%;
+}
+
+.container_antes-despues {
+  img{
+    width: 100%;
+    max-width: 700px;
+  }
+}
+
+.container_info_antes-despues {
+  padding: 2%;
+
+  p{
+    font-size: 1.2rem;
+  }
+
+  .button{
+    margin-top: 5%;
+    color: #366845;
+    border: 2px solid #366845;
+    padding: 1% 2%;
+    width: 12%;
+    @include mixins.container_flex(row, center);
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: all .3s ease;
+  }
+}

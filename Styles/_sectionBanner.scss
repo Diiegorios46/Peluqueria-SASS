@@ -2,26 +2,26 @@
 
 .sectionBanner {
   @include mixins.container_flex(row, center);
+  height: 650px;
 }
 
 .container-img {
   @include mixins.container_flex(row, none);
   background-image: url('../img/img1.png');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size :contain;
   background-position: center;
-  height: 100%;
-  width: 90%;
+  background-size: 100% 104%;
+  width: 85%;
   align-items: center;
   gap: 1rem;
   position: relative;
-  padding: 2rem;
 }
 
 .container_info_container-img {
   z-index: 2;
   margin-left: 10%;
-  max-width: 600px;
+  max-width: 650px;
 
   span {
     color: #69997d;
