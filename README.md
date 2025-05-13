@@ -19,7 +19,7 @@ Este proyecto sirve como ejemplo práctico para quienes desean aprender a trabaj
 <p align="center">
   <img src="https://github.com/user-attachments/assets/6e8a46d3-a457-4636-acf0-5b71146f92cd" alt="Screenshot 1" width="600"/>
   <img src="https://github.com/user-attachments/assets/ddd9948e-ab00-465c-80ab-4d763088a582" alt="Screenshot 2" width="600"/>
-  <img src="https://github.com/user-attachments/assets/1f774c8a-b198-479f-a25d-3c7c8c434767" alt="Screenshot 3" width="600"/>
+  <img src="https://github.com/user-attachments/assets/00819a50-d088-4658-a107-34a77994ab6b" alt="Screenshot 3" width="600"/>
   <img src="https://github.com/user-attachments/assets/75009265-cd1b-4560-a84f-3d75952a5557" alt="Screenshot 4" width="600"/>
   <img src="https://github.com/user-attachments/assets/092c3641-43b5-4d2c-824f-0787fd566404" alt="Screenshot 5" width="600"/>
   <img src="https://github.com/user-attachments/assets/53b4908c-29f6-412e-85cd-6089c587fa93" alt="Screenshot 6" width="600"/>
