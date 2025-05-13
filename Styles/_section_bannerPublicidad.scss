@@ -1,10 +1,44 @@
 @use '_mixins';
 
+@media (max-width:1000px){
+    .container_section_bannerPublicidad{
+        background-size: none !important;
+    }
+
+    .info_bannerPublicidad{
+        width: auto !important;
+    }
+
+    .info_bannerPublicidad > span{
+        font-size: 0.5rem !important;
+    }
+
+    .info_bannerPublicidad > h1{
+        font-size: 0.5rem !important;
+    }
+
+    .info_bannerPublicidad > p{
+        font-size: 0.5rem !important;
+    }
+
+    .info_bannerPublicidad > .button{
+        padding: 4px 3px !important;
+        margin: 5% !important;
+        font-size: 0.6rem !important;
+        width: 19% !important;
+    }
+
+    .container_info_bannerPublicidad{
+        height: auto !important;
+    }
+
+
+}
+
+
 .section_bannerPublicidad{
     margin-top: 5%;
     @include mixins.container_flex(row, center);
-
-
 
     .container_section_bannerPublicidad{
         @include mixins.container_flex(column, start);
@@ -15,14 +49,14 @@
     }
 
     .container_info_bannerPublicidad{
-        height: 100%;
+        height: 700px;
         position: relative;
         color: white;
         @include mixins.container_flex(column, center);
         
         div{
-            width: 37%;
-            margin-left: 10%;
+            width: 45%;
+            margin: 2% 6%;
 
             span{
                 font-size: 1rem;
@@ -65,10 +99,4 @@
     }
 }
 
-
-@media (max-width:1000px){
-    .container_section_bannerPublicidad{
-        background-size: 100% auto;
-    }
-}
 

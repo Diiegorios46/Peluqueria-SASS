@@ -166,6 +166,7 @@ header {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 350px));
   max-width: 85%;
+  gap: 20px;
 }
 .section_tratamiento .container_grid_cortes .container_content-img {
   width: 100%;
@@ -183,6 +184,32 @@ header {
   text-align: center;
 }
 
+@media (max-width: 1000px) {
+  .container_section_bannerPublicidad {
+    background-size: none !important;
+  }
+  .info_bannerPublicidad {
+    width: auto !important;
+  }
+  .info_bannerPublicidad > span {
+    font-size: 0.5rem !important;
+  }
+  .info_bannerPublicidad > h1 {
+    font-size: 0.5rem !important;
+  }
+  .info_bannerPublicidad > p {
+    font-size: 0.5rem !important;
+  }
+  .info_bannerPublicidad > .button {
+    padding: 4px 3px !important;
+    margin: 5% !important;
+    font-size: 0.6rem !important;
+    width: 19% !important;
+  }
+  .container_info_bannerPublicidad {
+    height: auto !important;
+  }
+}
 .section_bannerPublicidad {
   margin-top: 5%;
   display: flex;
@@ -201,7 +228,7 @@ header {
   width: 85%;
 }
 .section_bannerPublicidad .container_info_bannerPublicidad {
-  height: 100%;
+  height: 700px;
   position: relative;
   color: white;
   display: flex;
@@ -210,8 +237,8 @@ header {
   flex-wrap: wrap;
 }
 .section_bannerPublicidad .container_info_bannerPublicidad div {
-  width: 37%;
-  margin-left: 10%;
+  width: 45%;
+  margin: 2% 6%;
 }
 .section_bannerPublicidad .container_info_bannerPublicidad div span {
   font-size: 1rem;
@@ -250,11 +277,6 @@ header {
   position: absolute;
 }
 
-@media (max-width: 1000px) {
-  .container_section_bannerPublicidad {
-    background-size: 100% auto;
-  }
-}
 .section_resultadosPeluqueria {
   margin-top: 5%;
   display: flex;
@@ -474,16 +496,15 @@ header {
   padding: 0.5rem 0;
 }
 
-@media (max-width: 300px) {
+@media (max-width: 350px) {
   .container_form_contacto > form {
-    height: auto;
-    width: 100%;
+    margin: 0 auto !important;
   }
-  .container_info_contacto {
-    margin: 0;
+  .container_flex-contacto > div {
+    height: auto !important;
   }
-  .container_form_contacto {
-    margin-left: 10px;
+  .container_flex-contacto {
+    gap: 2rem !important;
   }
 }
 footer iframe {
@@ -504,6 +525,11 @@ footer ul {
   padding: 4rem 0;
 }
 
+@media (max-width: 350px) {
+  .container_footer {
+    padding: 4rem !important;
+  }
+}
 body {
   padding: 0;
   margin: 0;

@@ -15,6 +15,13 @@ footer{
 
 .container_footer{
     display: grid;
-grid-template-columns: repeat(auto-fit, minmax(200px, 5fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 5fr));
     padding: 4rem 0;
+}
+
+
+@media (max-width:350px) {
+    .container_footer{
+        padding: 4rem !important;
+    }
 }

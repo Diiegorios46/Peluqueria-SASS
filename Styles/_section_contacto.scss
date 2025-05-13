@@ -92,17 +92,16 @@
     }
 }
 
-@media (max-width:300px) {
+@media (max-width:350px) {
   .container_form_contacto > form {
-    height: auto;
-    width: 100%;
+    margin: 0 auto !important;
   }
 
-  .container_info_contacto{
-    margin: 0;
+  .container_flex-contacto > div{
+    height: auto !important;
   }
 
-  .container_form_contacto{
-    margin-left: 10px;
+  .container_flex-contacto {
+    gap: 2rem !important;
   }
 }

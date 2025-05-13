@@ -33,6 +33,7 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(260px, 350px));
         max-width: 85%;
+        gap: 20px;
 
         .container_content-img{
             width: 100%;
