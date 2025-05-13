@@ -496,9 +496,11 @@ header {
   padding: 0.5rem 0;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 400px) {
   .container_form_contacto > form {
     margin: 0 auto !important;
+    height: auto;
+    gap: 15px;
   }
   .container_flex-contacto > div {
     height: auto !important;
