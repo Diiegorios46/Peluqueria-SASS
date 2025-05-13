@@ -12,6 +12,8 @@ El objetivo principal es explorar y aplicar características avanzadas de SASS c
 
 Este proyecto sirve como ejemplo práctico para quienes desean aprender a trabajar con SASS en entornos reales, manteniendo el código limpio, reutilizable y escalable.
 
+Hosting : https://landing-page-peluqueria-sass.vercel.app/
+
 ---
 
 ## 🖼️ Capturas del proyecto
