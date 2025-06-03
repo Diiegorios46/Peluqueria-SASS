@@ -17,7 +17,7 @@
   flex-direction: row;
   justify-content: none;
   flex-wrap: wrap;
-  background-image: url("../img/hero.jpg");
+  background-image: url("../img/hair-stylist-combing-womans-hair.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -34,7 +34,7 @@
   max-width: 650px;
 }
 .container_info_container-img span {
-  color: #366845;
+  color: #ffffff;
   font-weight: bold;
   font-size: clamp(1rem, 2vw, 1.5rem);
 }
@@ -140,6 +140,10 @@ header {
 .container_nav .box_info_container_nav_ ul li {
   font-weight: bold;
 }
+.container_nav .box_info_container_nav_ ul li:hover {
+  color: #4fa86e;
+  cursor: pointer;
+}
 
 @media (max-width: 1080px) {
   .container_nav {
@@ -209,122 +213,6 @@ header {
   text-align: center;
 }
 
-@media (max-width: 1000px) {
-  .container_section_bannerPublicidad {
-    background-size: none !important;
-  }
-  .info_bannerPublicidad {
-    width: auto !important;
-  }
-  .info_bannerPublicidad > span {
-    font-size: 0.5rem !important;
-  }
-  .info_bannerPublicidad > h1 {
-    font-size: 0.5rem !important;
-  }
-  .info_bannerPublicidad > p {
-    font-size: 0.5rem !important;
-  }
-  .info_bannerPublicidad > .button {
-    padding: 4px 3px !important;
-    font-size: 0.6rem !important;
-    width: 100% !important;
-  }
-  .container_info_bannerPublicidad {
-    height: auto !important;
-  }
-}
-.section_bannerPublicidad {
-  margin-top: 5%;
-  max-height: 700px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-.section_bannerPublicidad .container_section_bannerPublicidad {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  flex-wrap: wrap;
-  background-image: url("../img/img7.jpg");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  width: 85%;
-}
-.section_bannerPublicidad .container_info_bannerPublicidad {
-  height: 700px;
-  position: relative;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-.section_bannerPublicidad .container_info_bannerPublicidad div {
-  width: 45%;
-  margin: 2% 6%;
-}
-.section_bannerPublicidad .container_info_bannerPublicidad div span {
-  font-size: 1rem;
-  font-weight: 100;
-}
-.section_bannerPublicidad .container_info_bannerPublicidad div h1 {
-  font-size: 2.6rem;
-  font-weight: 100;
-  margin: 10px 10px;
-}
-.section_bannerPublicidad .container_info_bannerPublicidad div p {
-  font-size: 1.2rem;
-  margin: 0;
-  letter-spacing: 1px;
-  font-weight: 100;
-}
-.section_bannerPublicidad .container_info_bannerPublicidad div .container-button {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 3% 0;
-  margin-top: 5%;
-  margin-left: 0;
-  font-size: 1.2rem;
-  cursor: pointer;
-  width: 100%;
-}
-.section_bannerPublicidad .container_info_bannerPublicidad div .container-button .button {
-  border-radius: 10px;
-  background-color: #437657;
-  color: white;
-  padding: 12px 24px;
-  font-size: 1rem;
-  font-weight: 600;
-  border: none;
-  cursor: pointer;
-  box-shadow: 0 4px 6px rgba(67, 118, 87, 0.3);
-  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
-}
-.section_bannerPublicidad .container_info_bannerPublicidad div .container-button .button:hover {
-  background-color: rgb(57.7648648649, 101.7351351351, 75.0081081081);
-  box-shadow: 0 6px 10px rgba(67, 118, 87, 0.4);
-  transform: translateY(-2px);
-}
-.section_bannerPublicidad .container_info_bannerPublicidad div .container-button .button:active {
-  transform: translateY(0);
-  box-shadow: 0 3px 5px rgba(67, 118, 87, 0.2);
-}
-.section_bannerPublicidad img {
-  width: 85%;
-  height: 80%;
-  object-fit: cover;
-  position: absolute;
-}
-
-@media (max-width: 1500px) {
-  .container-button {
-    justify-content: start;
-  }
-}
 .section_resultadosPeluqueria {
   margin-top: 5%;
   display: flex;

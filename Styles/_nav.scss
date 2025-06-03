@@ -27,7 +27,14 @@ header {
       li {
         @extend %distanciaEntreLi;
         font-weight: bold;
+
+      &:hover {
+          color: #4fa86e; // Cambia el color al pasar el mouse
+          cursor: pointer;
+        }
+
       }
+
     }
   }
 }
