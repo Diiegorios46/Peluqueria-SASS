@@ -7,7 +7,7 @@
 
 .container-img {
   @include mixins.container_flex(row, none);
-  background-image: url('../img/img1.png');
+  background-image: url('../img/hero.jpg');
   background-repeat: no-repeat;
   background-size :contain;
   background-position: center;
@@ -24,7 +24,7 @@
   max-width: 650px;
 
   span {
-    color: #69997d;
+    color: #366845;
     font-weight: bold;
     font-size: clamp(1rem, 2vw, 1.5rem);
   }
@@ -32,22 +32,44 @@
   h1 {
     font-size: clamp(2rem, 5vw, 3rem);
     font-weight: bold;
-    color: #69997d;
+    color: #ffffff;
   }
 
   p {
-    color: #584d45;
+    color: #ffffff;
     font-size: clamp(1rem, 2vw, 1.25rem);
   }
 
-  button {
-    width: fit-content;
+  .container-button {
     padding: 10px 20px;
-    border: 2px solid #4d967c;
-    color: #69997d;
-    background-color: #dacabd;
+    color: #000000;
     font-size: 1rem;
+    border-radius: 12px;
     cursor: pointer;
+
+  .button {
+    border-radius: 10px;
+    background-color: #437657;
+    color: white;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(67, 118, 87, 0.3);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+
+    &:hover {
+      background-color: darken(#437657, 5%);
+      box-shadow: 0 6px 10px rgba(67, 118, 87, 0.4);
+      transform: translateY(-2px);
+    }
+
+    &:active {
+      transform: translateY(0);
+      box-shadow: 0 3px 5px rgba(67, 118, 87, 0.2);
+    }
+  }
   }
 }
 
@@ -56,7 +78,7 @@
   .container-img {
     flex-direction: column;
     background-size: cover;
-    background-position: 100%;
+    background-position: 80%;
     padding: 1.5rem;
   }
 
@@ -91,7 +113,4 @@
     font-size: clamp(1.5rem, 6vw, 2rem);
   }
 
-  .container_info_container-img button {
-    width: 100%;
-  }
 }

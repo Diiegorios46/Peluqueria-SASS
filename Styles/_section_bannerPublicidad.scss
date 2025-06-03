@@ -23,26 +23,24 @@
 
     .info_bannerPublicidad > .button{
         padding: 4px 3px !important;
-        margin: 5% !important;
         font-size: 0.6rem !important;
-        width: 19% !important;
+        width: 100% !important;
     }
 
     .container_info_bannerPublicidad{
         height: auto !important;
     }
-
-
 }
 
 
 .section_bannerPublicidad{
     margin-top: 5%;
+    max-height: 700px;
     @include mixins.container_flex(row, center);
 
     .container_section_bannerPublicidad{
         @include mixins.container_flex(column, start);
-        background-image: url('../img/img5.jpg');
+        background-image: url('../img/img7.jpg');
         background-size: 100% 100%;
         background-repeat: no-repeat;
         width: 85%;
@@ -76,20 +74,41 @@
                 font-weight: 100;
             }
 
-            .button{
+            .container-button{
                 @include mixins.container_flex(row, center);     
-                border: none;
                 padding: 3% 0;
                 margin-top: 5%;
                 margin-left: 0;
-                border :1px solid white;
                 font-size: 1.2rem;
-                font-weight: 600;
-                border-radius: 5px;
                 cursor: pointer;
+                width: 100%;
+
+                .button {
+                border-radius: 10px;
+                background-color: #437657;
+                color: white;
+                padding: 12px 24px;
+                font-size: 1rem;
+                font-weight: 600;
+                border: none;
+                cursor: pointer;
+                box-shadow: 0 4px 6px rgba(67, 118, 87, 0.3);
+                transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+
+                &:hover {
+                    background-color: darken(#437657, 5%);
+                    box-shadow: 0 6px 10px rgba(67, 118, 87, 0.4);
+                    transform: translateY(-2px);
+                }
+
+                &:active {
+                    transform: translateY(0);
+                    box-shadow: 0 3px 5px rgba(67, 118, 87, 0.2);
+                }
+                }
+                }
             }
         }
-    }
 
     img{
         width: 85%;
@@ -100,3 +119,8 @@
 }
 
 
+@media (max-width: 1500px) { 
+    .container-button{
+        justify-content: start;
+    }
+}

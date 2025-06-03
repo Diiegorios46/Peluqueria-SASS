@@ -17,7 +17,7 @@
   flex-direction: row;
   justify-content: none;
   flex-wrap: wrap;
-  background-image: url("../img/img1.png");
+  background-image: url("../img/hero.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -34,27 +34,46 @@
   max-width: 650px;
 }
 .container_info_container-img span {
-  color: #69997d;
+  color: #366845;
   font-weight: bold;
   font-size: clamp(1rem, 2vw, 1.5rem);
 }
 .container_info_container-img h1 {
   font-size: clamp(2rem, 5vw, 3rem);
   font-weight: bold;
-  color: #69997d;
+  color: #ffffff;
 }
 .container_info_container-img p {
-  color: #584d45;
+  color: #ffffff;
   font-size: clamp(1rem, 2vw, 1.25rem);
 }
-.container_info_container-img button {
-  width: fit-content;
+.container_info_container-img .container-button {
   padding: 10px 20px;
-  border: 2px solid #4d967c;
-  color: #69997d;
-  background-color: #dacabd;
+  color: #000000;
   font-size: 1rem;
+  border-radius: 12px;
   cursor: pointer;
+}
+.container_info_container-img .container-button .button {
+  border-radius: 10px;
+  background-color: #437657;
+  color: white;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(67, 118, 87, 0.3);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+}
+.container_info_container-img .container-button .button:hover {
+  background-color: rgb(57.7648648649, 101.7351351351, 75.0081081081);
+  box-shadow: 0 6px 10px rgba(67, 118, 87, 0.4);
+  transform: translateY(-2px);
+}
+.container_info_container-img .container-button .button:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 5px rgba(67, 118, 87, 0.2);
 }
 
 /* 💻 Tablet */
@@ -62,7 +81,7 @@
   .container-img {
     flex-direction: column;
     background-size: cover;
-    background-position: 100%;
+    background-position: 80%;
     padding: 1.5rem;
   }
   .container_info_container-img {
@@ -89,9 +108,6 @@
   .container_info_container-img h1 {
     font-size: clamp(1.5rem, 6vw, 2rem);
   }
-  .container_info_container-img button {
-    width: 100%;
-  }
 }
 header {
   display: flex;
@@ -101,7 +117,7 @@ header {
   width: 100%;
   box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid gray;
-  padding: 10px 0;
+  padding: 25px 0;
 }
 
 .container_nav {
@@ -109,9 +125,8 @@ header {
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 50%;
-  align-items: center;
   width: 60%;
+  align-items: center;
 }
 .container_nav .box_info_container_nav_ ul {
   display: flex;
@@ -119,6 +134,8 @@ header {
   justify-content: none;
   flex-wrap: wrap;
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 .container_nav .box_info_container_nav_ ul li {
   font-weight: bold;
@@ -126,12 +143,20 @@ header {
 
 @media (max-width: 1080px) {
   .container_nav {
-    width: 100%;
+    width: 90%;
   }
 }
 @media (max-width: 700px) {
   .container_nav {
-    font-size: 0.4rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .container_nav .box_info_container_nav_ ul {
+    flex-direction: column;
+  }
+  .container_nav .box_info_container_nav_ ul li {
+    margin: 8px 0;
   }
 }
 .section_tratamiento .container_tratamiento span {
@@ -202,9 +227,8 @@ header {
   }
   .info_bannerPublicidad > .button {
     padding: 4px 3px !important;
-    margin: 5% !important;
     font-size: 0.6rem !important;
-    width: 19% !important;
+    width: 100% !important;
   }
   .container_info_bannerPublicidad {
     height: auto !important;
@@ -212,6 +236,7 @@ header {
 }
 .section_bannerPublicidad {
   margin-top: 5%;
+  max-height: 700px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -222,7 +247,7 @@ header {
   flex-direction: column;
   justify-content: start;
   flex-wrap: wrap;
-  background-image: url("../img/img5.jpg");
+  background-image: url("../img/img7.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   width: 85%;
@@ -255,20 +280,38 @@ header {
   letter-spacing: 1px;
   font-weight: 100;
 }
-.section_bannerPublicidad .container_info_bannerPublicidad div .button {
+.section_bannerPublicidad .container_info_bannerPublicidad div .container-button {
   display: flex;
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-  border: none;
   padding: 3% 0;
   margin-top: 5%;
   margin-left: 0;
-  border: 1px solid white;
   font-size: 1.2rem;
-  font-weight: 600;
-  border-radius: 5px;
   cursor: pointer;
+  width: 100%;
+}
+.section_bannerPublicidad .container_info_bannerPublicidad div .container-button .button {
+  border-radius: 10px;
+  background-color: #437657;
+  color: white;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(67, 118, 87, 0.3);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+}
+.section_bannerPublicidad .container_info_bannerPublicidad div .container-button .button:hover {
+  background-color: rgb(57.7648648649, 101.7351351351, 75.0081081081);
+  box-shadow: 0 6px 10px rgba(67, 118, 87, 0.4);
+  transform: translateY(-2px);
+}
+.section_bannerPublicidad .container_info_bannerPublicidad div .container-button .button:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 5px rgba(67, 118, 87, 0.2);
 }
 .section_bannerPublicidad img {
   width: 85%;
@@ -277,6 +320,11 @@ header {
   position: absolute;
 }
 
+@media (max-width: 1500px) {
+  .container-button {
+    justify-content: start;
+  }
+}
 .section_resultadosPeluqueria {
   margin-top: 5%;
   display: flex;
@@ -302,19 +350,30 @@ header {
 .container_info_antes-despues p {
   font-size: 1.2rem;
 }
-.container_info_antes-despues .button {
-  margin-top: 5%;
-  color: #366845;
-  border: 2px solid #366845;
-  padding: 1% 2%;
-  width: 12%;
+.container_info_antes-despues .container-button {
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  flex-wrap: wrap;
-  font-size: 1.2rem;
-  text-decoration: none;
-  transition: all 0.3s ease;
+}
+.container_info_antes-despues .button {
+  border-radius: 10px;
+  background-color: #437657;
+  color: white;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(67, 118, 87, 0.3);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+}
+.container_info_antes-despues .button:hover {
+  background-color: rgb(57.7648648649, 101.7351351351, 75.0081081081);
+  box-shadow: 0 6px 10px rgba(67, 118, 87, 0.4);
+  transform: translateY(-2px);
+}
+.container_info_antes-despues .button:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 5px rgba(67, 118, 87, 0.2);
 }
 
 .container_flex-opiniones {
@@ -416,7 +475,7 @@ header {
   justify-content: center;
   flex-wrap: wrap;
   gap: 10rem;
-  width: 85%;
+  width: 100%;
   position: relative;
   top: 60px;
   z-index: 5;
@@ -451,7 +510,7 @@ header {
   background-color: #366845;
   padding-top: 5%;
   max-height: 600px;
-  min-height: 640px;
+  min-height: 700px;
 }
 
 .container_info_contacto {
@@ -463,6 +522,7 @@ header {
 
 .container_form_contacto {
   width: 100%;
+  padding-bottom: 10px;
 }
 .container_form_contacto form {
   display: flex;
@@ -527,7 +587,7 @@ footer ul {
   padding: 4rem 0;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 425px) {
   .container_footer {
     padding: 4rem !important;
   }
